@@ -16,6 +16,7 @@ func _ready():
 	$VioletGenerator.connect("button_down" , self, "count_new_intance")
 	$CountLabel.text = INSTANCES_TEXT + String(instancesCount)
 	pass
+	
 func delete():
 	instancesCount = 0
 	$CountLabel.text = INSTANCES_TEXT + String(instancesCount)
